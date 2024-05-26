@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTMLFinal</title>
     <link rel="stylesheet" href="./output.css" />
+    <style>
+      .whoImage {
+        background-position-x: -130px;
+      }
+    </style>
   </head>
   <body>
-    <nav class="fixed z-20 w-full py-5">
-      <div class="mx-auto flex items-center justify-around gap-28 text-white">
+    <nav class="absolute z-20 w-full px-14 py-5">
+      <div
+        class="mx-auto flex w-full flex-wrap items-center justify-between gap-8 text-white"
+      >
         <div class="logo">
-          <img src="img/Logo White.png" alt="loog" width="325px" />
+          <img src="img/Logo White.png" alt="logo" width="250px" />
         </div>
-        <div class="nav-link text-2xl">
-          <div class="link flex gap-10">
+        <div class="nav-link text-xl">
+          <div class="link flex gap-14">
             <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
               >Products</a
             >
@@ -29,18 +36,225 @@
     </nav>
     <section id="hero">
       <div
-        class="h-screen w-full rounded-b-xl bg-[url('img/CoffeHeader.png')] bg-cover p-10"
+        class="mb-10 h-screen w-full rounded-b-xl bg-[url('img/CoffeHeader.png')] bg-cover p-10"
       >
         <div
           class="hero absolute left-0 right-0 top-0 flex h-screen flex-col items-center justify-center rounded-b-xl bg-[#143642B2] text-white"
         >
-          <h1 class="text-center text-8xl font-bold leading-tight">
-            Freshly Brewed <br />
+          <h1 class="text-center text-5xl font-bold xl:text-8xl">
+            Freshly Brewed
+          </h1>
+          <h1 class="mt-4 text-center text-5xl font-bold xl:text-8xl">
             Coffe & Tea
           </h1>
-          <h2 class="text-5xl font-thin">Best Qualities from our local soil</h2>
+          <h2 class="text-xl font-thin xl:text-5xl">
+            Best Qualities from our local soil
+          </h2>
         </div>
       </div>
     </section>
+    <section id="who" class="container mx-auto">
+      <div
+        class="md:justify-arround flex flex-wrap justify-center gap-24 py-10"
+      >
+        <div
+          style="background-image: url(&quot;img/WhoAreWe.jpg&quot;)"
+          class="whoImage position-top aspect-[9/14] w-56 rounded-xl bg-cover"
+        ></div>
+        <div class="description w-80">
+          <h1
+            class="mb-4 text-3xl font-bold text-[#0F8B8D] underline decoration-[#EC9A29] underline-offset-[12px]"
+          >
+            Who are we?
+          </h1>
+          <p>
+            We are a Jakarta-based coffee and tea house focused on
+            professionally brewing locally sourced, high quality, coffee beans
+            and tea leaves.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="product" class="container mx-auto">
+      <div
+        class="md:justify-arround flex flex-wrap justify-center gap-28 py-14"
+      >
+        <div
+          style="background-image: url(img/Our\ products.jpg)"
+          class="productImage position-top order-1 aspect-square w-56 rounded-xl bg-cover md:order-2"
+        ></div>
+        <div class="description order-2 w-80 md:order-1">
+          <h1
+            class="mb-4 text-3xl font-bold text-[#0F8B8D] underline decoration-[#EC9A29] underline-offset-[12px]"
+          >
+            Product Showcase
+          </h1>
+          <p>
+            Our products contain the highest quality ingredients processed with
+            care.
+          </p>
+          <button
+            class="mt-5 rounded-full bg-[#A8201A] px-10 py-2 text-sm text-white"
+          >
+            See our coffee and tea
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="hang" class="container mx-auto">
+      <div
+        class="md:justify-arround flex flex-wrap justify-center gap-28 py-14"
+      >
+        <div
+          style="background-image: url(img/Hangoutwithus.jpg)"
+          class="productImage position-top aspect-square w-56 rounded-xl bg-cover"
+        ></div>
+        <div class="description w-80">
+          <h1
+            class="mb-4 text-3xl font-bold text-[#0F8B8D] underline decoration-[#EC9A29] underline-offset-[12px]"
+          >
+            Hang out with us!
+          </h1>
+          <p>
+            Our store use sustainable furnitures, surrounded by nature, to help
+            our planet survive.
+          </p>
+          <button
+            class="mt-5 rounded-full bg-[#A8201A] px-10 py-2 text-sm text-white"
+          >
+            Find our Cafes
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="find" class="container mx-auto">
+      <h1 class="text-center text-3xl font-bold text-[#0F8B8D]">
+        Find us at Instagram
+        <a href="#" class="text-[#EC9A29] underline underline-offset-8"
+          >@aroma_bumi</a
+        >
+      </h1>
+      <div
+        class="find-wrapper grid grid-cols-3 grid-rows-2 items-center justify-center px-5 py-10 text-center xl:ml-32"
+      >
+        <div
+          style="background-image: url(img/Feed\ 1.png)"
+          class="m-5 aspect-square max-w-72 rounded-xl bg-cover"
+        ></div>
+        <div
+          style="background-image: url(img/Feed\ 2.png)"
+          class="m-5 aspect-square max-w-72 rounded-xl bg-cover"
+        ></div>
+        <div
+          style="background-image: url(img/Feed\ 3.png)"
+          class="m-5 aspect-square max-w-72 rounded-xl bg-cover"
+        ></div>
+        <div
+          style="background-image: url(img/Feed\ 4.png)"
+          class="m-5 aspect-square max-w-72 rounded-xl bg-cover"
+        ></div>
+        <div
+          style="background-image: url(img/Feed\ 5.png)"
+          class="m-5 aspect-square max-w-72 rounded-xl bg-cover"
+        ></div>
+        <div
+          style="background-image: url(img/Feed\ 6.png)"
+          class="m-5 aspect-square max-w-72 rounded-xl bg-cover"
+        ></div>
+      </div>
+    </section>
+    <section id="ask" class="container mx-auto">
+      <div class="flex flex-col items-center justify-center py-10">
+        <h1 class="text-3xl font-bold text-[#0F8B8D]">Ask us more!</h1>
+        <p class="px-10 py-5 text-center">
+          If you have any questions or interested to cooperate with us, kindly
+          let us know here:
+        </p>
+        <button
+          class="mt-5 rounded-full bg-[#A8201A] px-10 py-2 text-sm text-white"
+        >
+          Contact us
+        </button>
+      </div>
+    </section>
+    <footer
+      class="box-border min-h-[300px] w-full rounded-t-xl bg-[#143642] p-5"
+    >
+      <div
+        class="content-wrapper flex flex-col justify-evenly gap-10 px-3 text-white md:px-10 md:pt-10 md:text-xl xl:flex-row xl:gap-28"
+      >
+        <div class="logo-footer flex justify-between xl:flex-col">
+          <div class="logo">
+            <img
+              src="img/Logo White.png"
+              alt=""
+              class="block w-[200px] md:w-[300px]"
+            />
+          </div>
+          <div class="icon flex gap-2">
+            <img
+              src="img/MAIL ICON.svg"
+              alt=""
+              class="block aspect-square w-10"
+            />
+            <img
+              src="img/PHONE ICON.svg"
+              alt=""
+              class="block aspect-square w-10"
+            />
+          </div>
+        </div>
+
+        <div class="products">
+          <div class="footer-link flex flex-col gap-2">
+            <div class="title font-medium text-[#EC9A29]">
+              <h1>Products</h1>
+            </div>
+            <div class="link-wrapper flex flex-col gap-2 pl-6 xl:pl-0">
+              <div class="link">
+                <a href="#">Coffe Based</a>
+              </div>
+              <div class="link">
+                <a href="#">Non-coffee</a>
+              </div>
+              <div class="link">
+                <a href="#">Tea Based</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="store">
+          <div class="footer-link flex flex-col gap-2">
+            <div class="title font-medium text-[#EC9A29]">
+              <h1>Store</h1>
+            </div>
+            <div class="link-wrapper flex flex-col gap-2 pl-6 xl:pl-0">
+              <div class="link">
+                <a href="#">Location</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="footer-link flex flex-col gap-2">
+            <div class="title font-medium text-[#EC9A29]">
+              <h1>Contact</h1>
+            </div>
+            <div class="link-wrapper flex flex-col gap-2 pl-6 xl:pl-0">
+              <div class="link">
+                <a href="#">Customer Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="copyright flex justify-center bg-[#143642] py-10 text-white xl:hidden"
+    >
+      <h1>2024 © Designed by Progate Indonesia</h1>
+    </div>
   </body>
 </html>
