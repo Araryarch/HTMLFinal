@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../output.css" />
   </head>
   <body>
-    <nav class="navbar bg-[#0F8B8D]">
+    <nav class="navbar relative bg-[#0F8B8D]">
       <div class="navbar-wrapper">
         <div class="logo">
-          <img src="../img/Logo White.png" alt="logo" width="250px" />
+          <img src="../img/Logo White.png" alt="logo" width="350px" />
         </div>
         <div class="nav-link text-xl">
           <div class="link flex gap-14">
-            <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
+            <a
+              href="products.html"
+              class="transition-all ease-out hover:text-[#abd1c6]"
               >Products</a
             >
-            <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
+            <a
+              href="store.html"
+              class="transition-all ease-out hover:text-[#abd1c6]"
               >Store</a
             >
             <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
@@ -27,7 +31,87 @@
         </div>
       </div>
     </nav>
-    <section id="product" class="min-h-screen w-full"></section>
+
+    <section id="contact" class="mx-auto box-border w-full p-10 xl:w-[50%]">
+      <h1 class="text-3xl font-semibold text-[#0F8B8D]">How can we help?</h1>
+      <form action="#" class="mx-auto my-10 rounded-xl border-2 px-5 py-10">
+        <div
+          class="input mb-5 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-center"
+        >
+          <label for="name" class="w-[35%] flex-initial text-xl font-medium"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            class="flex-1 rounded-md border-2 px-4 py-2"
+          />
+        </div>
+        <div
+          class="input mb-5 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-center"
+        >
+          <label for="email" class="w-[35%] flex-initial text-xl font-medium"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            class="flex-1 rounded-md border-2 px-4 py-2"
+          />
+        </div>
+        <div
+          class="input mb-5 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-center"
+        >
+          <label
+            for="number"
+            class="flex-initial text-xl font-medium md:w-[35%]"
+            >Phone Number</label
+          >
+          <input
+            type="number"
+            id="number"
+            placeholder="Phone Number"
+            class="flex-1 rounded-md border-2 px-4 py-2"
+          />
+        </div>
+        <div
+          class="input mb-5 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-center"
+        >
+          <label for="subject" class="w-[35%] flex-initial text-xl font-medium"
+            >Subject</label
+          >
+          <input
+            type="text"
+            id="subject"
+            placeholder="Subject"
+            class="flex-1 rounded-md border-2 px-4 py-2"
+          />
+        </div>
+        <div
+          class="input mb-5 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-center"
+        >
+          <label for="message" class="w-[35%] flex-initial text-xl font-medium"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            placeholder="Message"
+            class="flex-1 rounded-md border-2 px-4 py-2"
+          ></textarea>
+        </div>
+        <div class="input flex justify-center">
+          <button
+            type="submit"
+            class="w-[50%] rounded-full bg-[#A8201A] px-4 py-2 text-white xl:w-[25%]"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
     <!-- Section Here -->
     <footer class="footer">
       <div class="content-wrapper">
@@ -36,7 +120,7 @@
             <img
               src="../img/Logo White.png"
               alt=""
-              class="block w-[200px] md:w-[300px]"
+              class="block w-[200px] md:w-[350px]"
             />
           </div>
           <div class="icon flex gap-2">

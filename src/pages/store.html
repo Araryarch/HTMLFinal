@@ -3,31 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Store Location</title>
     <link rel="stylesheet" href="../output.css" />
   </head>
   <body>
-    <nav class="navbar bg-[#0F8B8D]">
+    <nav class="navbar relative bg-[#0F8B8D]">
       <div class="navbar-wrapper">
         <div class="logo">
           <img src="../img/Logo White.png" alt="logo" width="250px" />
         </div>
         <div class="nav-link text-xl">
           <div class="link flex gap-14">
-            <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
+            <a
+              href="products.html"
+              class="transition-all ease-out hover:text-[#abd1c6]"
               >Products</a
             >
-            <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
+            <a
+              href="store.html"
+              class="transition-all ease-out hover:text-[#abd1c6]"
               >Store</a
             >
-            <a href="#" class="transition-all ease-out hover:text-[#abd1c6]"
+            <a
+              href="contact.html"
+              class="transition-all ease-out hover:text-[#abd1c6]"
               >Contact</a
             >
           </div>
         </div>
       </div>
     </nav>
-    <section id="product" class="min-h-screen w-full"></section>
+    <section
+      id="store"
+      class="box-border flex min-h-screen w-full flex-col items-center justify-center p-10 md:gap-5 xl:flex-row"
+    >
+      <div class="gmaps box-border md:px-20 xl:order-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.634549007205!2d112.79235037532045!3d-7.282355992724909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa1323221a93%3A0x306c3c99adedb258!2sSepuluh%20Nopember%20Institute%20of%20Technology!5e0!3m2!1sen!2sid!4v1716825635983!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          s
+          class="aspect-square w-80 rounded-xl shadow-sm shadow-white md:w-[500px]"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="find order-1 py-10">
+        <h1 class="text-2xl font-bold text-[#0F8B8D]">Find Us!</h1>
+        <p>Come visit us at our store or deliver to your house!</p>
+        <div
+          style="width: 400px"
+          class="card my-5 box-border flex flex-col rounded-xl border border-black p-5 shadow-sm shadow-black"
+        >
+          <h1 class="pb-6 text-xl font-bold">Block 71</h1>
+          <p>
+            Ariobimo Sentral, South Jakarta, RT.9/RW.4, East Kuningan,
+            Setiabudi, Jakarta, 12950
+          </p>
+        </div>
+        <div
+          style="width: 400px"
+          class="card my-5 box-border flex flex-col rounded-xl border border-black p-5 shadow-sm shadow-black"
+        >
+          <h1 class="pb-6 text-xl font-bold">Woodland Park Residence</h1>
+          <p>
+            Jl. Raya Kalibata No.22, RW.7, Rawajati, Kec. Pancoran, Kota Jakarta
+            Selatan, Daerah Khusus Ibukota Jakarta 12750
+          </p>
+        </div>
+        <div
+          style="width: 400px"
+          class="card my-5 box-border flex flex-col rounded-xl border border-black p-5 shadow-sm shadow-black"
+        >
+          <h1 class="pb-6 text-xl font-bold">IKEA Alam Sutera</h1>
+          <p>
+            Alam Sutera, Jl. Jalur Sutera Boulevard No. 45, Kunciran, Kec.
+            Pinang, Kota Tangerang, Banten 15320
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Section Here -->
     <footer class="footer">
       <div class="content-wrapper">
