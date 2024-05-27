@@ -19,3 +19,18 @@
     @apply flex justify-center bg-[#143642] py-10 text-white xl:hidden;
   }
 }
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: #143642b2;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
