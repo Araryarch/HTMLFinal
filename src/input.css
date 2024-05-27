@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply absolute z-20 w-full px-14 py-5;
+  }
+  .navbar-wrapper {
+    @apply mx-auto flex w-full flex-wrap items-center justify-between gap-8 text-white;
+  }
+  .footer {
+    @apply box-border min-h-[300px] w-full rounded-t-xl bg-[#143642] p-5;
+  }
+  .content-wrapper {
+    @apply flex flex-col justify-evenly gap-10 px-3 text-white md:px-10 md:pt-10 md:text-xl xl:flex-row xl:gap-28;
+  }
+  .copyright {
+    @apply flex justify-center bg-[#143642] py-10 text-white xl:hidden;
+  }
+}
